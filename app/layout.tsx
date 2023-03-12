@@ -1,5 +1,6 @@
 import "../styles/globals.css";
 import Sidebar from '../components/Sidebar'
+import { ChatContextProvider } from "../Context/ChatContext";
 export default function RootLayout({
   children,
 }: {
@@ -15,7 +16,7 @@ export default function RootLayout({
              
 
         {/* Clientprovider notification */}
-        <div className="bg-gray-700  flex-1 px-10">{children}</div></div>
+      <div className="bg-gray-700  flex-1 px-10"><ChatContextProvider>{children}</ChatContextProvider></div></div> 
 
       </body>
     </html>
