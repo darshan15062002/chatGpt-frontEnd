@@ -2,8 +2,15 @@
 import React, { useState } from 'react'
 //importing typewriter-effect
 import Typewriter from "typewriter-effect";
-
-function Message({doc}){
+type Chat = {
+  Usertype: string;
+  Mess: string;
+};
+type ChatProps = {
+  doc: Chat;
+};
+function Message({doc}:ChatProps){
+  console.log(doc);
   
   
 

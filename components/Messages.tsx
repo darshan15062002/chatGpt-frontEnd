@@ -21,10 +21,10 @@ function Messages() {
   
   return (
     <div className='flex flex-col gap-5 overflow-y-scroll no-scrollbar h-[80%] w-full'>
-    {chats.map((doc) =>(
-       <Message doc={doc} />
+    {chats.map((doc, index) =>(
+       <Message doc={doc} key={index}/>
     ))}
-    <div className='w-full' ref={bottomRef} />
+    <div className='w-full'  ref={bottomRef} />
     </div>
   )
 }

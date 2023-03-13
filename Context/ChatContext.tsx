@@ -34,7 +34,7 @@ export const ChatContextProvider = ({ children }: { children: React.ReactNode })
   
     const INITIAL_STATE =
         [{
-            Usertype: '',
+            Usertype: 'bot',
             Mess: 'How can i halp you'
         }]
 
