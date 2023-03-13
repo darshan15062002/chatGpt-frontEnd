@@ -11,7 +11,7 @@ const {dispatch}=useContext(ChatContext);
     e.preventDefault()
 
     if(!prompt) return;
-
+    dispatch({type:"ADD_CHAT",payload:{Usertype:'user', Mess:prompt}})
     setPrompt("")
         
     const res =await fetch('/api/generate-answer', {
@@ -23,7 +23,8 @@ const {dispatch}=useContext(ChatContext);
     })
    
     const da = await res.json();
-    dispatch({type:"ADD_CHAT",payload:{prompt:{Usertype:'user', Mess:prompt},da:{Usertype:'bot',Mess:da.text}} })
+    
+    dispatch({type:"ADD_CHAT",payload:{Usertype:'bot',Mess:da.text} })
     console.log(da);
     
    

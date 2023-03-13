@@ -10,7 +10,7 @@ export default function RootLayout({
     <html>
       <head />
       <body>
-        <div className="flex h-full ">  
+        <div className="flex h-full overflow-clip">  
               {/* sidebar */}
              <Sidebar />
              

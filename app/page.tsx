@@ -16,7 +16,7 @@ function Homepage() {
 
   return (
     
-    <div className="relative text-white text-xs md:text-sm max-h-screen  flex flex-col space-y-7 items-center h-screen  px-0 sm:px-10"><h1 className="text-2xl font-bold  text-white">ChatGPT</h1>
+    <div className="relative text-white text-xs md:text-sm max-h-screen  flex flex-col space-y-7 items-center h-screen  px-0 sm:px-10 py-10"><h1 className="text-2xl font-bold  text-white">ChatGPT</h1>
     {/* <div className="flex gap-5 ">
     <div className='space-y-7'>
         <div className="flex flex-col items-center justify-center">
@@ -51,8 +51,9 @@ function Homepage() {
             <p className='bg-gray-900/50 p-2 rounded-md'>Limited knowledge of world and events after 2021</p>
         </div>
     </div></div> */}
-    <Messages/>
-    <div className="w-full absolute bottom-10"><Inputbox /></div>
+    <div className="flex flex-col  h-full w-full "><Messages/>
+    <Inputbox /></div>
+    
    
 
 
